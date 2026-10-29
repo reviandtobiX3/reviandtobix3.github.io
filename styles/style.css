@@ -229,14 +229,14 @@ main {
 
 .btn-primary {
     background: var(--accent-deep);
-    color: --text;
+    color: var(--text);
     backdrop-filter: blur(6px);
-    box-shadow: --shadow;
+    box-shadow: var(--shadow);
 }
 
 .btn-secondary {
-    background: --surface;
-    color: --text;
+    background: var(--surface);
+    color: var(--text);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -389,7 +389,7 @@ main {
     text-decoration: none;
     color: inherit;
     background:
-        linear-gradient(180deg, rgba(255,255,255,0.76), rgba(126,164,95,0.13)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(126, 164, 95, 0.13)),
         var(--surface);
     border: 1px solid var(--line);
     border-radius: 22px;
@@ -442,7 +442,7 @@ main {
     border-color: rgba(71, 97, 42, 0.42);
 }
 
-.social-card > * {
+.social-card>* {
     position: relative;
     z-index: 1;
 }
