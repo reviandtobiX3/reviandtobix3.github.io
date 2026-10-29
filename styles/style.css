@@ -229,20 +229,14 @@ main {
 
 .btn-primary {
     background: var(--accent-deep);
-    color: #f8f8f3;
+    color: --text;
     backdrop-filter: blur(6px);
-    box-shadow: 0 10px 30px -18px rgba(25, 39, 12, 0.8);
-}
-
-@media (prefers-color-scheme: dark) {
-    .btn-primary {
-        box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.9);
-    }
+    box-shadow: --shadow;
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.14);
-    color: #fff;
+    background: --surface;
+    color: --text;
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
