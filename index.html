@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revi | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand"><a href="#home">reviandtobi</a></div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-inner">
+                <p class="eyebrow">Welcome to my world!</p>
+                <h1>revi X3</h1>
+                <p class="tagline">I make random little things to make your life easier.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View projects</a>
+                    <a href="#contact" class="btn btn-secondary">Let’s talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <article class="card">
+                <p class="section-label">About</p>
+                <h2>Design that feels rooted and easy to explore.</h2>
+                <p>Get it? Cause I like plants? Anywho, my design philosophy is centred around ease of use and intuitive interactions! No unnecessary complexity, or clutter.</p>
+            </article>
+
+            <article class="card">
+                <p class="section-label">Goal</p>
+                <h2>Ease, Entertainment, and Excitement.</h2>
+                <p>I want to make things that are easy to use, fun to interact with, and exciting to experience, things that you can watch on my media, things that can be used daily. So I'll be streaming my processes and hopefully making games!</p>
+            </article>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-heading">
+                <p class="section-label">Projects</p>
+                <h2>Selected work</h2>
+            </div>
+
+            <div class="project-grid">
+                <a class="project-link" href="pages/dress-and-appearance.html">
+                    <article class="project-card">
+                        <span class="project-logo" aria-hidden="true">
+                            <img src="assets/dress-and-appearance/logo-bg.svg" alt="" class="project-logo-bg">
+                            <img src="assets/dress-and-appearance/logo-fg.svg" alt="" class="project-logo-fg">
+                        </span>
+                        <h3>Dress and Appearance</h3>
+                        <p>An open beta app for JROTC cadets that helps simplify uniform preparation and standards.</p>
+                    </article>
+                </a>
+            </div>
+            <div class="project-grid">
+                <a class="project-link" href="pages/HARK.html">
+                    <article class="project-card">
+                        <span class="project-logo" aria-hidden="true">
+                            <img src="assets/HARK/logo-bg.svg" alt="" class="project-logo-bg">
+                            <img src="assets/HARK/logo-fg.svg" alt="" class="project-logo-fg">
+                        </span>
+                        <h3>HARK</h3>
+                        <p>A Java rouge-like game to familiarize myself with both Java, and community input.</p>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="section-heading">
+                <p class="section-label">Media rhythm</p>
+                <h2>Where to follow the process</h2>
+            </div>
+
+            <div class="social-grid">
+                <a class="social-card twitch" href="https://www.twitch.tv/revintobi" target="_blank" rel="noreferrer">
+                    <span class="social-platform">Twitch</span>
+                    <h3>Live Coding and Game Streams</h3>
+                    <p>Saturdays @ 7:00 PM</p>
+                </a>
+
+                <a class="social-card tiktok" href="https://www.tiktok.com/@revintobi" target="_blank" rel="noreferrer">
+                    <span class="social-platform">TikTok</span>
+                    <h3>Quick Behind-The-Scenes Clips</h3>
+                    <p>¯\_(ツ)_/¯</p>
+                </a>
+
+                <a class="social-card youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                    <span class="social-platform">YouTube</span>
+                    <h3>Longer Walkthroughs and Tutorials</h3>
+                    <p>Probably monthly</p>
+                </a>
+
+                <a class="social-card discord" href="https://discord.com/" target="_blank" rel="noreferrer">
+                    <span class="social-platform">Discord</span>
+                    <h3>Community hangout</h3>
+                    <p>Daily check-ins (I don't keep a strict schedule)</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-card" id="contact">
+            <p class="section-label">Contact</p>
+            <h2>Let’s make something thoughtful together.</h2>
+            <p>Available for collaborations, portfolio refreshes, and design projects that need a warmer visual voice.</p>
+            <div class="contact-actions">
+                <a href="mailto:reviandtobi@gmail.com" class="btn btn-primary">reviandtobi@gmail.com</a>
+                <a href="https://ko-fi.com/reviandtobi" class="kofi-badge" target="_blank" rel="noreferrer" aria-label="Support on Ko-fi"></a>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <p>&copy; 2026 Ivory Cisneros. All rights reserved.</p>
+            <p><a href="pages/privacy-policy.html">Privacy Policy</a> · <a href="pages/terms-of-service.html">Terms of Service</a></p>
+        </footer>
+    </main>
+
+    <div class="consent-overlay" id="consent-overlay" aria-hidden="true">
+        <div class="consent-modal" role="dialog" aria-modal="true" aria-labelledby="consent-title">
+            <p class="section-label">Before you continue</p>
+            <h2 id="consent-title">Please review our legal terms</h2>
+            <p>By continuing, you acknowledge that you have read and accepted the site’s <a href="pages/privacy-policy.html">Privacy Policy</a> and <a href="pages/terms-of-service.html">Terms of Service</a>.</p>
+            <button class="btn btn-primary" id="accept-legal">I accept</button>
+        </div>
+    </div>
+
+    <script>
+        const consentKey = 'revi-legal-consent';
+        const consentOverlay = document.getElementById('consent-overlay');
+        const acceptButton = document.getElementById('accept-legal');
+
+        function hasAcceptedLegalTerms() {
+            return localStorage.getItem(consentKey) === 'accepted';
+        }
+
+        function showConsentOverlay() {
+            consentOverlay.classList.add('is-visible');
+            consentOverlay.setAttribute('aria-hidden', 'false');
+        }
+
+        function hideConsentOverlay() {
+            consentOverlay.classList.remove('is-visible');
+            consentOverlay.setAttribute('aria-hidden', 'true');
+        }
+
+        if (!hasAcceptedLegalTerms()) {
+            showConsentOverlay();
+        }
+
+        acceptButton.addEventListener('click', () => {
+            localStorage.setItem(consentKey, 'accepted');
+            hideConsentOverlay();
+        });
+    </script>
+</body>
+</html>
